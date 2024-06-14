@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms and CSS</title>
+</head>
+
+<body>
+    <form action="./contact.html" novalidate >
+        <label>Username:</label>
+        <!-- label(Inline) and input(is inline-Block)-->
+        <input type="text" placeholder="Enter your name" name="Username" autocomplete="off" required><br><br>
+        <label>Age:</label>
+        <input type="number" placeholder="Please enter age" name="User-Age" value="18"><br><br>
+
+
+        <label>Gender:</label><br>
+
+        <input type="radio" id="m1" value="Male" name="Gender"><label for="m1">Male</label><br>
+
+        <input type="radio" id="f1" value="Female" name="Gender"><label for="f1">Female</label><br><br>
+
+
+        <label>Hobbies:</label><br>
+
+        <input type="checkbox" id="p1" value="Painting" name="Hobbies"><label for="p1">Painting</label><br>
+
+        <input type="checkbox" id="p2" value="Playing" name="Hobbies"><label for="p2">Playing</label><br><br>
+        
+        <textarea name="" id="" rows="4"></textarea><br><br>
+        
+        
+        
+        <select name="city">
+            <option value="new York">new York</option>
+            <option value="Delhi">Delhi</option>
+            <option value="fbd" selected>fbd</option>
+        </select><br><br>
+
+
+        <input type="submit">
+        <input type="reset">
+        <br>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+
+</html>

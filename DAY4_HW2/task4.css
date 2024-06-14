@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body>div{
+    height : 200px;
+    width: 200px;
+    margin: 48px;
+    border: 2px solid black;
+}
+
+.c1,.c2,.c3,.c4{
+    border: 2px dotted blue;
+    font-size: 32px;
+    height: 75px;
+    width: 75px;    
+}
+.c1{
+    position: relative;   
+}
+.c2{
+    position: relative;
+    left: 75px;
+}
+.c3{
+    position: relative;
+    left: 75px;
+} */
+ 
+/* body>div{
+    height : 200px;
+    width: 200px;
+    margin: 48px;
+    border: 2px solid black;
+}
+
+.c1,.c2,.c3,.c4{
+    border: 2px dotted blue;
+    font-size: 32px;
+    height: 75px;
+    width: 75px;    
+} */
+/* .c1{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.c2{
+    position: relative;
+    left: 55px;
+    top: -15px;
+}
+.c3{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+} */
+
+body>div{
+    height : 200px;
+    width: 200px;
+    margin: 48px;
+    border: 2px solid black;
+}
+
+.c1,.c2,.c3,.c4{
+    border: 2px dotted blue;
+    font-size: 32px;
+    height: 75px;
+    width: 75px;    
+}
+.c1{
+    position: absolute;
+}
+.c3{
+    position: absolute;
+}
+.c4{
+    position: relative;
+    z-index: 1;
+}

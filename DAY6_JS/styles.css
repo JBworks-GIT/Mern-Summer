@@ -1,0 +1,14 @@
+.cs1{
+    text-decoration: underline;
+}
+
+.name{
+    padding: 12px 14px;
+    color: brown;
+}
+
+.email{
+    padding: 12px 14px;
+    color: brown;
+    text-decoration: underline;
+}

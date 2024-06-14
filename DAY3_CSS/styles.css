@@ -1,0 +1,100 @@
+/* .btn{
+    display: block;
+        background-color: greenyellow;
+        color: white;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 16px;
+        padding: 0.4em 1em;
+        border-radius: 0.5em;
+        border: none;        
+        opacity: 0.5;
+        transition: all 300ms ease;
+
+}
+.btn:hover{
+    opacity: 1;
+    cursor:pointer;
+    scale: 1.2;
+} */
+/* pseudo classes */
+
+/* a{
+    color: red;
+    text-decoration: none;
+}
+
+a:visited{
+    color: violet;
+    text-decoration: none;
+} */
+
+/* ul {
+  background-color: beige;
+}
+li:last-child {
+  color: red;
+} */
+/* li:first-child{
+    color: yellow;
+} */
+/* li:nth-child(2){
+    color: yellow;
+} */
+/* li:first-of-type{
+    color: green;
+ } */
+
+/* .child {
+  background-color: orange;
+flex-basis: 100px;
+}
+.search{
+    flex-grow: 2;
+}
+.parent {
+  background-color: aqua;
+  display: flex;
+} */
+
+.child {
+  background-color: orange;
+  border: 1px solid grey;
+}
+
+.parent {
+  /* height: 500px; */
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 100px 200px 300px 100px;
+  grid-template-columns:repeat(4,100px);
+  /* grid-template-columns: 1fr 2fr 3fr 1fr; */
+  grid-auto-rows: 100px;
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  /* justify-items: center; */
+  /* align-items: center; */
+}
+
+/* .child2{
+  grid-column-start: 3;
+  grid-column-end: 4;
+} */
+
+
+.p{
+  background-color: yellow;
+  height: 300px;
+  width: 300px;
+}
+.c1,.c2{
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+}
+.c1{
+  position: absolute;
+  left:110px;
+}

@@ -1,0 +1,30 @@
+/* nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+img{
+    height: 10px;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    border-bottom: 4px dotted blue;
+    padding: 16px;
+    display: flex;
+    gap: 24px;
+}
+.hamburger{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+nav input{
+    flex-grow: 1;
+}

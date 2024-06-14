@@ -1,0 +1,89 @@
+/* h4{
+    color: green;
+}
+.mew.heading2{
+    font-size: 30px;
+}
+.mew,.heading2{
+    text-decoration: underline;
+} */
+
+/* .root{
+    background-color: aliceblue;
+    padding: 12px;
+    margin: 12px;
+    border: 2px solid black;
+    width: 200px;
+}
+.root2{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    padding: 12px;
+    margin: 12px;
+    border: 2px solid black;
+    width: 200px;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* div{
+    background-color: aquamarine;
+    font-size: 10px;
+}
+p{
+    background-color: blue;
+    font-size: 4em;
+    width: 10em;
+} */
+
+/* div{
+    background-color: aqua;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    } */
+/* works on block elements only  */
+/* button{
+    background-color: aqua;
+    width: fit-content;
+    margin: auto;
+    } */
+    /* text-align: center; */
+
+
+    /* .btn{
+        display: block;
+        background-color: greenyellow;
+        color: white;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 16px;
+        padding: 0.4em 1em;
+        border-radius: 0.5em;
+        border: none;
+    }
+    .big{
+        font-size: 24px;
+    }
+    .small{
+        font-size: 12px;
+    } */
+
+    /* button{
+        width: 100vw;
+        height: 100vh;
+    } */
+
+    div h3{
+        color: aqua;
+    }
+    div>h3{
+        color: brown;
+    }
+    li h3{
+        color: coral;
+    }
