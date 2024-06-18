@@ -1,0 +1,9 @@
+.root{
+    display: flex;
+    padding-left: 50px;
+}
+
+.root>div{
+    align-items: center;
+    justify-content: center;
+}
