@@ -20,7 +20,7 @@ const app = http.createServer(async (req, res) => {
 
   switch (pathname) {
     case "/": {
-      const readHome = await fsPromises.readFile("./pages/homepage.html");
+      const readHome = await fsPromises.readFile(`${__dirname}/pages/homepage.html`);
       res.end(readHome);
       break;
     }
