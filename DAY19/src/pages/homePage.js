@@ -2,11 +2,10 @@ import ProductInfoCard from "../components/productInfoCard";
 import Navbar from "../components/navbar";
 import CategoryBar from "../components/categoryBar";
 
-const HomePage = (props) => {
-    const { productInfoCards, categories } = props;
+const HomePage = ({ productInfoCards, categories, setSearchText }) => {
     return (
         <div className="homepage-root-container">
-            <Navbar />
+            <Navbar setSearchText={setSearchText} />
             <CategoryBar categories={categories} />
             <div className="homepage-body">
                 <img
