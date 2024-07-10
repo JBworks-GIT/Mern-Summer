@@ -144,7 +144,7 @@ const App = () => {
       path: "/signup", //differs from signup route of backend
       element: <SignUp />,
     },
-  ]);
+  ])
   const [cart, setCart] = useState([]);
   const addToCart = (elem) => {
     console.log(elem);
@@ -181,7 +181,7 @@ const App = () => {
 
   return (
     <AppContext.Provider value={contextValues}>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />; 
     </AppContext.Provider>
   );
 };

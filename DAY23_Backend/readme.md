@@ -72,7 +72,7 @@ procedure:
         --> if email already exists --> send error in proper format
             --> status: 400, and json with status fail and message : 'User already exists'
 
-    12. Make proper UI for Login and SingUp Pages (both page should be separate)
+    12. Make proper UI for Login and SignUp Pages (both page should be separate)
 
 
 
