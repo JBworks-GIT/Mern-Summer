@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import CategoryBar from "../components/categoryBar";
 import Navbar from "../components/navbar";
+import useGetProducts from "../hooks/useGetProducts";
+import AppContext from "../context/appContext";
 
 const SearchPage = (props) => {
-  const [products, setProducts] = useState([]);
-  const { categories ,setSearchText ,searchText} = props;
+  const { categories } = props;
+  const products = useGetProducts();
+  const { addToCart } = useContext(AppContext);
 
   const customStyles = {
     padding: "48px",
@@ -23,24 +26,12 @@ const SearchPage = (props) => {
   //   };
 
   //   let products = [];
-  
-  
-  async function getData() {
-    //no need to pass event react already passes it
-    // const val = e.target.value;
-    const res = await fetch(`https://dummyjson.com/products/search?q=${searchText}`);
-    const data = await res.json();
-    // products = data.products;
-    setProducts(data.products);
-  }
-
-  useEffect(()=>{getData()},[searchText])
 
   return (
     //circular braces should be in front of return
     //fragment
     <>
-      <Navbar setSearchText={setSearchText}/>
+      <Navbar />
       <CategoryBar categories={categories} />
       <div style={customStyles}>
         <input type="text" onChange={getData} />
@@ -49,7 +40,24 @@ const SearchPage = (props) => {
       <hr />
       <button onClick={getData}>Get Data</button>
       {products.map((elem) => {
-        return <p>{elem.title}</p>;
+        return (
+          <div
+            style={{
+              width: "400px",
+              backgroundColor: "yellow",
+              margin: "24px auto",
+            }}
+          >
+            <h2 key={elem.id}>{elem.title}</h2>
+            <button
+              onClick={() => {
+                addToCart(elem);
+              }}
+            >
+              Add to Cart
+            </button>
+          </div>
+        );
       })}
     </>
   );

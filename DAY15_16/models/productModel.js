@@ -14,14 +14,7 @@ const mongoose = require('mongoose');
 //     },
 //     images : [],
 //     metaData : {},
-//     createdAt:{
-//         type: Date,
-//         default :Date.now(),
-//     },
-//     updatedAt:{
-//         type: Date,
-//         default : Date.now(),
-//     },
+//     
 // })
 
 const productSchema = new mongoose.Schema({
