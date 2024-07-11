@@ -1,15 +1,15 @@
 import { useState } from "react";
-import useSignUp from "../hooks/useSignUp";
+import useLogin from "../hooks/useLogin";
 
-const SignUp = () => {
-  const { signUp } = useSignUp();
+const Login = () => {
+  const {login} = useLogin();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const validate = () => {
     const validate1 = email.length>4;
     const validate2 = email.length>=8;
     if (validate1 && validate2) {
-      signUp({ email, password });
+      login({ email, password });
     } else if(!validate1){
       alert("Error in Email");
     }
@@ -36,11 +36,10 @@ const SignUp = () => {
             setPassword(e.target.value);
           }}
         />
-        <button onClick={validate}>Sign Up</button>
-        <p>Already on Amazon? <a href="./login.js">Login</a></p>
+        <button onClick={validate}>Login</button>
       </div>
     </div>
   )
 };
 
-export default SignUp;
+export default Login;

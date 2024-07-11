@@ -7,6 +7,7 @@ import SignUp from "./src/pages/signUp";
 import { useState } from "react";
 import ProductInfo from "./src/pages/productInfo";
 import AppContext from "./src/context/appContext";
+import Login from "./src/pages/login";
 
 const parent = document.getElementById("root");
 const root = ReactDOM.createRoot(parent);
@@ -143,6 +144,10 @@ const App = () => {
     {
       path: "/signup", //differs from signup route of backend
       element: <SignUp />,
+    },
+    {
+      path: "/login", //differs from signup route of backend
+      element: <Login />,
     },
   ])
   const [cart, setCart] = useState([]);
