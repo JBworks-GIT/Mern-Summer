@@ -114,11 +114,14 @@ const categories = [
 
 const App = () => {
   //component
+  const [cart, setCart] = useState([]);
   const [searchText, setSearchText] = useState(""); //useState is a function and return array of size 2 [0] has name of state and [1] has func to update state
+  const [loggedInUser, setLoggedInUser] = useState(null); 
+  
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
+      element: !loggedInUser ? <SignUp/> : (
         <HomePage
           productInfoCards={productInfoCards}
           searchText={searchText}
@@ -129,7 +132,7 @@ const App = () => {
     },
     {
       path: "/search",
-      element: (
+      element:  !loggedInUser ? <SignUp/> :(
         <SearchPage
           searchText={searchText}
           setSearchText={setSearchText}
@@ -139,18 +142,17 @@ const App = () => {
     },
     {
       path: "/search/:id",
-      element: <ProductInfo />,
+      element:  !loggedInUser ? <SignUp/> :<ProductInfo />,
     },
     {
       path: "/signup", //differs from signup route of backend
-      element: <SignUp />,
+      element:  loggedInUser ? <HomePage/> :<SignUp />,
     },
     {
       path: "/login", //differs from signup route of backend
-      element: <Login />,
+      element:  loggedInUser ? <HomePage/> :<Login />,
     },
   ])
-  const [cart, setCart] = useState([]);
   const addToCart = (elem) => {
     console.log(elem);
     const isPresent = cart.findIndex((cI) => cI.id === elem.id);
@@ -175,14 +177,20 @@ const App = () => {
     }
   };
 
+  const appLogin = (user) =>{
+    setLoggedInUser(user);
+  }
+
   const contextValues = {
+    loggedInUser,
     cart,
     addToCart,
     categories,
     searchText,
     setSearchText,
+    appLogin,
   };
-  console.log(cart);
+  console.log("state" , loggedInUser);
 
   return (
     <AppContext.Provider value={contextValues}>

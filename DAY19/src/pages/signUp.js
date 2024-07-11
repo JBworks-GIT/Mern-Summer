@@ -37,7 +37,7 @@ const SignUp = () => {
           }}
         />
         <button onClick={validate}>Sign Up</button>
-        <p>Already on Amazon? <a href="./login.js">Login</a></p>
+        <p>Already on Amazon? <a href="./login">Login</a></p>
       </div>
     </div>
   )

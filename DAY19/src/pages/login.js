@@ -2,7 +2,7 @@ import { useState } from "react";
 import useLogin from "../hooks/useLogin";
 
 const Login = () => {
-  const {login} = useLogin();
+  const {login} = useLogin(); 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const validate = () => {
@@ -16,11 +16,12 @@ const Login = () => {
     else{
       alert("passowrd is less than 7 chars");
     }
+    
   };
 
   return (
     <div className="Container-Main">
-      <h1>Sign Up Page</h1>
+      <h1>Login Page</h1>
       <div className="Container-inner">
         <h2>Enter Email</h2>
         <input
