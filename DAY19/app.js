@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./globalStyles.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./src/pages/homePage";
-import SearchPage from "./src/pages/SearchPage";
+import SearchPage from "./src/pages/amazonSearchPage";
 import SignUp from "./src/pages/signUp";
 import { useState } from "react";
 import ProductInfo from "./src/pages/productInfo";

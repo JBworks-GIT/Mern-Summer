@@ -5,7 +5,7 @@ const authSchema = new mongoose.Schema({
     type: String,
     // required: true, //for generic error
     required : ["Email is required"], //for specific error
-    unique : true ,
+    unique : true ,  
   },
   password: {
     type: String,
